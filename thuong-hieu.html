@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Thương hiệu</title>
+<link href="https://plus.google.com/ " rel="author">
+<link rel="shortcut icon" href="favicon.ico" >
+<link rel="icon" href="favicon.ico" >
+<!--[if lt IE 9]>
+<script src="js/html5.js" type="text/javascript"></script>
+<![endif]-->
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/styles.css"/>
+		<link rel="stylesheet" href="css/slick.css"/>
+		<link rel="stylesheet" href="css/slick-theme.css"/>
+		<link rel="stylesheet" href="css/responsive.css"/>
+		<link rel="stylesheet" href="css/stylestore.css"/>
+		<link href="nivo-silder/nivo-slider.css" rel="stylesheet">  
+		<link href="nivo-silder/themes/default/default.css" rel="stylesheet" media="all" />
+		<link href="css/owl.carousel.css" rel="stylesheet"> 
+		<link href="css/owl.theme.css" rel="stylesheet"> 
+		<link rel="stylesheet" href="font/css/font-awesome.min.css"/>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/owl.carousel.min.js"></script> 
+		<script src="nivo-silder/jquery.nivo.slider.js"></script>
+		<script>
+        
+             $(document).ready(function() {  
+				$('#nivoSlider').nivoSlider({
+				//effect: 'random',				// Specify sets like: 'random,fold,fade,sliceDown'
+				//slices: 15,                     // For slice animations
+				//boxCols: 8,                     // For box animations
+				//boxRows: 4,						// For box animations
+				animSpeed: 500,					// Slide transition speed
+				pauseTime: 4000,				// How long each slide will show
+				//startSlide: 0,					// Set starting Slide (0 index)
+				//directionNav: true,             // Next & Prev navigation
+				//controlNav: false,				// 1,2,3... navigation
+				//controlNavThumbs: false,		// Use thumbnails for Control Nav
+				//pauseOnHover: true,             // Stop animation while hovering
+				//manualAdvance: true,			// Force manual transitions
+				//prevText: 'Prev',				// Prev directionNav text
+				//nextText: 'Next',				// Next directionNav text
+				//randomStart: true,             // Start on a random slide
+				});
+			});
+            function browserName(){
+            
+               var Browser = navigator.userAgent;
+               if (Browser.indexOf('MSIE') >= 0){
+                Browser = 'MSIE';
+               }
+               else if (Browser.indexOf('Firefox') >= 0){
+                Browser = 'Firefox';
+               }
+               else if (Browser.indexOf('Chrome') >= 0){
+                Browser = 'Chrome';
+               }
+               else if (Browser.indexOf('Safari') >= 0){
+                Browser = 'Safari';
+               }
+               else if (Browser.indexOf('Opera') >= 0){
+                  Browser = 'Opera';
+               }
+               else{
+                Browser = 'UNKNOWN';
+               }
+               return Browser;
+            }
+            function browserVersion(){
+               var index;
+               var version = 0;
+               var name = browserName();
+               var info = navigator.userAgent;
+               index = info.indexOf(name) + name.length + 1;
+               version = parseFloat(info.substring(index,index + 3));
+               return version;
+            }
+            
+            //alert(browserVersion());
+            if(browserName() == "MSIE" && browserVersion() < 10){
+                alert("Vui l?ng n㯧 c?p tr?nh duy?t c?a b?n! Ho?c c󠴨? c᩠𿴠Chrome hay Firefox");
+               /* window.open('https://www.mozilla.org/vi/firefox/new/','_blank');
+                window.open('http://www.google.com.vn/intl/vi/chrome/','_blank');*/
+                window.location='http://hethongmatkinh.com/setting.html';
+            }
+            
+        </script>
+</head>
+<body>
+	<div id="wrapper">
+		<script>
+			jQuery(document).ready(function($) {
+				var secondaryarrow = $('.mn-nav');
+				$(window).on('scroll', function(){
+					if($(window).scrollTop() > 200 ) {
+						secondaryarrow.addClass('fixTop');
+					} else {
+						secondaryarrow.removeClass('fixTop');
+					}
+				});
+			});
+		</script>
+		<div id="header">
+			<div class="nav-top">
+				<div class="container container-top">
+					<div class="nav-top-left floatLeft">
+						<div class="social-top floatLeft">
+							<a href="https://www.facebook.com/matkinhloka" title="" target="_blank"><i class="fa fa-facebook"></i></a>
+							<a href="http://www.youtube.com/" title="" target="_blank"><i class="fa fa-youtube"></i></a>
+							<a href="https://plus.google.com/ " title="" target="_blank"><i class="icon-googleplus"></i></a>
+						</div>
+						<div class="hethongcuahang floatLeft">
+							<marquee>
+								<div class="adv_right">
+									<p style="font-size: 14px;color: #ffd700;font-weight: bold;">
+										<span style="color: #fff;">
+											<strong>Showroom 1:</strong>
+										</span>
+									301B Điện Biên Phủ, P.7, Q.3, TP. HCM - 
+										<span style="color: #fff;">
+											<strong>Showroom 2:</strong>
+										</span> 
+									245C Xô Viết Nghệ Tĩnh, P.17, Q. Bình Thạnh, TP. HCM - 
+										<span style="color: #fff;">
+											<strong>Showroom 3:</strong>
+										</span> 
+									33 Bạch Đằng, P. Phước Trung, TP. Bà Rịa - 
+										<span style="color: #fff;">
+											<strong>Showroom 4:</strong>
+										 </span> 
+									90 Nguyễn Hữu Thọ, P. Phước Trung, TP. Bà Rịa
+									</p>
+								</div>
+							</marquee>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="nav-top-right floatRight">
+						<p style='display:inline-block;'>
+							Email: mksgvn@gmail.com
+						</p>
+						<div id="google_translate_element">
+						</div>
+						<script>
+							function googleTranslateElementInit() {
+								new google.translate.TranslateElement({pageLanguage: 'vi', includedLanguages: 'en,vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+								}
+						</script>
+						<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+						</script>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="logo-nav">
+				<div class="container container-top">
+					<div class="logo floatLeft">
+						<div class="adv_right">
+							<a href="#" title="Logo">
+								<img  src="library/ads/mat-kinh-loka.jpg" alt="Logo"  title="Logo">
+							</a>
+						</div>
+					</div>
+					<div class="nav-pill floatRight">
+						<div class="hotline-top">
+							<span class="hotline">Hotline: <strong>0888368889</strong></span>
+							<div class="search-top">
+								<form name="formSearch" method='POST' action="#" class="formSearch">
+									<input type="text" name="txtSearch" class="txtSearch" placeholder="Nhập từ khóa cần tìm" />
+									<input type="submit" name="btnSearch" class="btnSearch" value="" />
+								</form>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+					<div class="logo logo2" style="display:none;">
+						<div class="adv_right">
+							<a href="http://hethongmatkinh.com/" title="Logo"><img src="library/ads/mat-kinh-loka.jpg" alt="Logo" title="Logo"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='mn-nav'>
+				<div class='mn-nav2'>
+					<div class="container container-top">
+						<div id="cssmenu">
+							<ul id="nav">
+								<li class='li-h'><a href="trang-chu.html" title="trang chủ">Trang chủ</a></li>
+								<li><a href="gioi-thieu.html" title="Giới thiệu">Giới thiệu</a></li>
+								<li><a href="thuong-hieu.html" title="Thương hiệu">Thương hiệu</a>
+									<ul class='lift'>
+									<li><a href="parim.html" title="Parim"> Parim</a></li>
+									<li><a href="exfash.html" title="Exfash"> Exfash</a></li>
+									<li><a href="velocity.html" title="Velocity"> Velocity</a></li>
+									<li><a href="chemi-lens" title="Chemi Lens"> Chemi Lens</a></li>
+									</ul>
+								</li>
+								<li><a href="tin-tuc.html" title="Tin Tức">Tin Tức</a>
+									<ul>
+										<li><a href="su-kien.html" title="Sự kiện"> Sự kiện</a></li>
+										<li><a href="khuc-xa-mat.html" title="Khúc Xạ Mắt"> Khúc Xạ Mắt</a></li>
+										<li><a href="thoi-trang.html" title="Thời Trang"> Thời Trang</a></li>
+									</ul>
+								</li>
+								<li><a href="san-pham.html" title="Sản phẩm">Sản phẩm</a>
+									<ul>
+										
+									</ul>
+								</li>
+								<li><a href="ban-can-biet.html" title="Bạn Cần Biết">Bạn Cần Biết</a>
+									<ul>
+										<li><a href="http://hethongmatkinh.com/tu-van-593/" title="Tư Vấn"> Tư Vấn</a></li>
+										<li><a href="http://hethongmatkinh.com/hinh-anh/" title="Hình Ảnh"> Hình Ảnh</a></li>
+										<li><a href="http://hethongmatkinh.com/video-clip/" title="Video Clip"> Video Clip</a></li>
+									</ul>
+								</li>
+								<li><a href="http://hethongmatkinh.com/khuyen-mai/" title="Khuyến Mãi">Khuyến Mãi</a>
+									<ul>
+										<li><a href="http://hethongmatkinh.com/thong-tin/" title="Thông Tin"> Thông Tin</a></li>
+										<li><a href="http://hethongmatkinh.com/tangvoucher/" title="Tặng-voucher"> Tặng-voucher</a></li>
+										<li><a href="http://hethongmatkinh.com/san-pham-sale-off/" title="Sản Phẩm Sale Off"> Sản Phẩm Sale Off</a></li>
+									</ul>
+								</li>
+								<li><a href="http://hethongmatkinh.com/doi-tac/" title="Đối Tác">Đối Tác</a></li>
+								<li><a href="http://hethongmatkinh.com/lien-he/" title="Liên hệ">Liên hệ</a></li>
+								<li>
+									<form name="formSearch" action="http://hethongmatkinh.com/tim-kiem/" class="formSearch formSearch-mobile">
+										<input type="text" name="txtSearch" class="txtSearch" placeholder="Nhập từ khóa cần tìm" />
+										<input type="submit" name="btnSearch" class="btnSearch" value="" />
+									</form>
+								</li>
+								<li class='arrow li-search'>
+									<a title='search'>
+                                    Tìm kiếm                                
+									</a>
+									<div class='form-searchnc'>
+										<form action="http://hethongmatkinh.com/tim-kiem/" method='POST' name='form-s' class='frm-snc'>
+											<input type='text' name='txtName' id='txtName' class='ipn' placeholder="Nhập từ khóa cần tìm">
+											<select name='slMG' class='slmg'>
+												<option value=''>--Mức giá--</option>
+												<option value='467'>Từ 100 tới 1 triệu</option>
+												<option value='465'>Từ 1 tới 2 triệu</option>
+												<option value='466'>Từ 2 tới 3 triệu</option>
+												<option value='468'>Từ 3 tới 5 triệu</option>
+												<option value='470'>Từ 5 tới 10 triệu</option>
+											</select>
+											<select name='slTH' class='slth'>
+											<option value=''>--Thương hiệu--</option>
+											<option value='459'>Parim</option>
+											<option value='458'>Exfash</option>
+											<option value='391'>Velocity</option>
+											<option value='455'>Chemi Lens</option>
+											<option value='454'>Ray Ban</option>
+											<option value='408'>HOYA</option>
+											<option value='407'>Bvlgari</option>
+											<option value='406'>XPlens</option>
+											<option value='457'>Essilor</option>
+											<option value='436'>Bausch + Lomb</option>
+											<option value='392'>Charmant</option>
+											<option value='460'>NBA</option>
+											</select>
+											<select name='sldm' class='slth'>
+												<option value=''>--Sản phẩm--</option>
+											</select>
+											<input type='submit' name='bntsm' value='Tìm kiếm' class='smbnt'>
+										</form>
+										<script>
+											$(document).ready(function() {
+												$(".li-search a").click(function() {
+													$(".form-searchnc").toggle();
+												});
+											});
+										</script>
+									</div>
+								</li>
+								<div class="clear"></div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<link href="css/details.css" rel="stylesheet"/>
+		<div class='container-small'>
+			<ul class='qdbh'>
+				<li>
+                    <a href='http://www.matkinhsaigon.com.vn/' title='Trang chủ'>
+                    <span style="background: url(images/i_ch.png) no-repeat center;background-size:22px;width:34px;height:34px;border-radius:50%;float:left;border:solid 2px #666;margin-right:5px;"></span>
+                    Trang chủ</a>
+                </li>
+				<li>
+                    <a href="san-pham.html" title='sản phẩm'>
+                    <span style="background: url(images/glasses.png) no-repeat center;background-size:22px;width:34px;height:34px;border-radius:50%;float:left;border:solid 2px #666;margin-right:5px;"></span>
+                    Sản phẩm</a>
+                </li>
+				<li>
+					<a href='dat-hang.html' title='Đặt Hàng'>
+					<span style="background: url(library/dat-hang_s421.png) no-repeat center;background-size:22px;width:34px;height:34px;border-radius:50%;float:left;border:solid 2px #666;margin-right:5px;"></span>
+					Đặt Hàng</a>
+				</li>
+				<li>
+					<a href='thanh-toan.html" title='Thanh Toán'>
+					<span style="background: url(library//thanh-toan_s422.png) no-repeat center;background-size:22px;width:34px;height:34px;border-radius:50%;float:left;border:solid 2px #666;margin-right:5px;"></span>
+					Thanh Toán</a>
+				</li>
+				<li>
+					<a href='giao-hang.html' title='Giao Hàng'>
+					<span style="background: url(library//giao-hang_s423.png) no-repeat center;background-size:22px;width:34px;height:34px;border-radius:50%;float:left;border:solid 2px #666;margin-right:5px;"></span>
+					Giao Hàng</a>
+				</li>
+				<li>
+					<a href='ho-tro.html' title='Hỗ trợ'>
+					<span style="background: url(library//ho-tro_s447.png) no-repeat center;background-size:22px;width:34px;height:34px;border-radius:50%;float:left;border:solid 2px #666;margin-right:5px;"></span>
+					Hỗ trợ</a>
+				</li>
+				<li>
+					<a href='ket-noi.html' title='Kết Nối'>
+					<span style="background: url(library//ket-noi_s425.png) no-repeat center;background-size:22px;width:34px;height:34px;border-radius:50%;float:left;border:solid 2px #666;margin-right:5px;"></span>
+					Kết Nối</a>
+				</li>
+				<li>
+					<a href='bao-hanh.html' title='Bảo Hành'>
+					<span style="background: url(library//bao-hanh_s424.png) no-repeat center;background-size:22px;width:34px;height:34px;border-radius:50%;float:left;border:solid 2px #666;margin-right:5px;"></span>
+					Bảo Hành</a>
+				</li>
+			</ul>
+		</div>
+		<div class="container-small">
+			<div class="page-content">
+				<div class="stores-home">
+					<h2 class="sectionTitle prc"><a href="thuong-hieu.html" title="">Thương hiệu</a></h2>
+					<div class="duongdan">
+						<a href="trang-chu.html" title="Trang chủ">Trang chủ</a>
+						<h1><a href="thuong-hieu.html" title="Thương hiệu">Thương hiệu</a></h1>
+					</div>
+					<div class="content-all">
+						<div class="prods-page">
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			jQuery(document).ready(function($) {
+				$('ul.tabs li').click(function() {
+					var tab_id = $(this).attr('data-tab');
+					$('ul.tabs li').removeClass('current');
+					$('.detail-inf2').removeClass('current');
+					$(this).addClass('current');
+					$("#"+tab_id).addClass('current');
+				});
+				$('ul.tabs1 li').click(function() {
+					var tab_id1 = $(this).attr('data-tab');
+					$('ul.tabs1 li').removeClass('current');
+					$('.detail-inf21').removeClass('current');
+					$(this).addClass('current');
+					$("#"+tab_id1).addClass('current');
+				});
+				});
+		</script>
+		<div id="footer">
+			<div class="container container-top container-ft"> 
+			</div>
+			<div class="tn-tagfin">
+				<div class='container'>
+				TAGS:&nbsp;&nbsp;
+				<h5></h5>
+				</div>
+			</div>
+			<p class="copyright">
+				Copyright © 2016 - Bản quyền thuộc về hệ thống bán lẻ mắt kính - <a href="http://hethongmatkinh.com/">www.hethongmatkinh.com</a>
+			</p>
+		</div>
+		<script>
+			$(function() {
+				$('html,body').animate({ scrollTop: 0 }, 'slow');
+				$('.toTop').each(function() {
+					$(this).click(function() {
+					$('html,body').animate({ scrollTop: 0 }, 'slow');
+					return false;
+					});
+				});
+				jQuery(document).ready(function($) {
+					$(window).on('scroll', function() {
+						if($(window).scrollTop() > 500 ) {
+						$('.toTop').addClass('cd-top');
+						} else {
+							$('.toTop').removeClass('cd-top');
+							}
+						});
+				});
+			});
+		</script>
+		<div id="toolbox">
+			<ul>
+				<li class="toTop"><a href="#top" title="Lên đầu trang"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></li>
+				<li class="home"><a href="trang-chu.html" title="Quay về trang chủ"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+				<li class="email"><a href="lien-he.html" title="Gửi email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+				<li class="phone"><a href="thong-tin-cua-hang.html" title="Điện thoại nóng"><i class="fa fa-mobile" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div
+</body
+</html>
